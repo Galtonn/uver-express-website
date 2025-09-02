@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uver Express</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="icon" href="images/uver_icon.png" type="image/png">
+        <!-- Add reCAPTCHA v3 -->
+        <script src="https://www.google.com/recaptcha/api.js?render=6Ler5k0rAAAAACtaC6HzjUoMx1mwqF1hpEXONWVm"></script>
+    </head>
+    <body>
+        <!-- Status Message Pop-up -->
+        <div id="statusMessage" class="status-message">
+            <p id="messageText"></p>
+            <span id="closeMessage" class="close-button">&times;</span>
+        </div>
+        <!-- End Status Message Pop-up -->
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/uver2.png" alt="Uver Express Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()" style="color: #ffffff;"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="services-dropdown">
+                        <a href="#" class="services-toggle">SERVICES</a>
+                        <ul class="dropdown">
+                          <li><a href="ocean.html">Ocean Freight</a></li>
+                          <li><a href="air.html">Air Freight</a></li>
+                          <li><a href="trucking.html">Trucking</a></li>
+                          <li><a href="customs.html">Customs Brokerage</a></li>
+                        </ul>
+                    </li>                          
+                    <li><a href="http://fxportal.uverexpress.com/" target="_blank">TRACKING</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" style="color: #000000;"></i>
+        </nav>
+        <section class="sub-header">
+            <h1>Contact</h1>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do I track my shipment?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>You can track your shipment using our tracking tool on this website: 
+                            <a href="http://fxportal.uverexpress.com/" target="_blank">fxportal.uverexpress.com</a>
+                        </p>
+                    </div>                    
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Why should I choose Uver Express over other companies?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>1. Last minute rate offers for leftover space through our booking monitoring system with different carriers.<br>
+                            This can save several hundreds of dollars for our custormers.<br><br>
+                           2. Free consulting for small business owners to guide them on how to start import and export businesses without<br>
+                              problems. It will be managed by our experience in trade, customs, and logistics fields of over 30 years. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact us -->
+        
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d359.45581286633694!2d-79.44179200608166!3d43.883875222827015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2b00530774dd%3A0xb4bf9bc3fa6b0978!2sUver%20Express!5e0!3m2!1sen!2sca!4v1746070649782!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>10520 Yonge Street Unit 35B, Suite #330</h5>
+                            <p>Richmond Hill, Ontario, Canada, L4C 3C7</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+1 (416) 399-6878</h5>
+                            <p>Monday to Friday, 8:30AM to 5PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>info@uverexpress.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post" id="contactForm">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+                        <button type="submit" class="visit-btn green-btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ocean.html">Ocean Freight</a></li>
+                        <li><a href="air.html">Air Freight</a></li>
+                        <li><a href="trucking.html">Trucking</a></li>
+                        <li><a href="customs.html">Customs Brokerage</a></li>
+                        <li><a href="http://fxportal.uverexpress.com/" target="_blank">Tracking</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>10520 Yonge Street Unit 35B, Suite #330<br>Richmond Hill, Ontario, Canada, L4C 3C7</p>
+                    <p>Phone: +1 (416) 399-6878</p>
+                    <p>Email: info@uverexpress.com</p>
+                    <p>Mon - Fri: 8:30AM – 5PM</p>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2025 UVER Express Inc. All Rights Reserved.</p>
+                <p>Information in this website is subject to change without notice.</p>
+            </div>
+        </section>  
+        
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            // Accordion toggle functionality with arrow rotation
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionBody = this.nextElementSibling;
+                    const arrowIcon = this.querySelector('i');
+                    
+                    // Toggle the active class and display
+                    if (accordionBody.style.display === 'block') {
+                        accordionBody.style.display = 'none';
+                        this.classList.remove('open');
+                    } else {
+                        accordionBody.style.display = 'block';
+                        this.classList.add('open');
+                    }
+                });
+            });
+        </script>
+
+        <!-- JavaScript for Shrinking Navbar -->
+        <script>
+            // Select the navbar
+            const navbar = document.querySelector('.navbar');
+    
+            // Listen for scroll events
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shrink');
+                } else {
+                    navbar.classList.remove('shrink');
+                }
+            });
+        </script>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const servicesItem = document.querySelector(".services-dropdown");
+                const toggle = document.querySelector(".services-toggle");
+                const dropdown = servicesItem.querySelector(".dropdown");
+                let isMobile = window.innerWidth <= 1300;
+            
+                function setupMobileMenu() {
+                    if (isMobile) {
+                        toggle.addEventListener("click", function (e) {
+                            e.preventDefault();
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        });
+            
+                        // Close if clicking outside
+                        document.addEventListener("click", function (e) {
+                            if (!servicesItem.contains(e.target)) {
+                                dropdown.style.display = "none";
+                            }
+                        });
+                    } else {
+                        // Desktop behavior
+                        servicesItem.addEventListener("mouseenter", function() {
+                            dropdown.style.display = "block";
+                        });
+            
+                        servicesItem.addEventListener("mouseleave", function() {
+                            dropdown.style.display = "none";
+                        });
+                    }
+                }
+            
+                setupMobileMenu();
+            
+                // Handle window resize without page reload
+                window.addEventListener("resize", function () {
+                    const wasMobile = isMobile;
+                    isMobile = window.innerWidth <= 1300;
+                    
+                    if (wasMobile !== isMobile) {
+                        dropdown.style.display = "none";
+                        setupMobileMenu();
+                    }
+                });
+            });
+        </script>                              
+
+        <!-- Status Message Pop-up -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const statusMessageDiv = document.getElementById("statusMessage");
+                const messageTextP = document.getElementById("messageText");
+                const closeButton = document.getElementById("closeMessage");
+
+                // Get URL parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const status = urlParams.get('status');
+
+                if (status) {
+                    let message = "";
+                    let className = "";
+
+                    if (status === "success") {
+                        message = "Mail sent successfully!";
+                        className = "success";
+                    } else if (status === "error") {
+                        message = "Failed to send mail. Please try again.";
+                        className = "error";
+                    }
+
+                    if (message) {
+                        messageTextP.textContent = message;
+                        statusMessageDiv.classList.add(className);
+
+                        // Display the message and add the 'show' class to trigger the transition
+                        statusMessageDiv.style.display = "block"; // Make it display block first
+                        setTimeout(function() { // Small delay to allow display:block to register before transition
+                             statusMessageDiv.classList.add('show'); // Add the show class to trigger opacity/visibility transition
+                        }, 10); // Tiny delay
+
+                        // Optional: Automatically hide after some time (if animation is removed)
+                        // If you keep the animation, the animation handles the fade out automatically.
+                        // If you remove the animation, use this setTimeout with the transition from step 1 CSS
+                        setTimeout(function() {
+                            statusMessageDiv.classList.remove('show'); // Hide using transition
+                             // Optional: Remove the status parameter from URL after hiding
+                            history.replaceState(null, null, window.location.pathname);
+                        }, 7000); // Hide after 7000 milliseconds (7 seconds)
+
+                    }
+
+                    // Add event listener to close button
+                    closeButton.addEventListener("click", function() {
+                        // Remove the show class to trigger the fade out transition
+                        statusMessageDiv.classList.remove('show');
+
+                        // After the fade out transition finishes, hide the element completely
+                        // The transition duration is 0.5s in the CSS
+                        statusMessageDiv.addEventListener('transitionend', function() {
+                            statusMessageDiv.style.display = 'none';
+                            // Optional: Remove status classes after hiding
+                             statusMessageDiv.classList.remove('success', 'error');
+                             // Optional: Remove the status parameter from URL after closing
+                            history.replaceState(null, null, window.location.pathname);
+                        }, { once: true }); // Use { once: true } to remove the listener after it fires
+
+                    });
+
+                    // Optional: Also hide if clicking outside the message
+                    document.addEventListener("click", function(event) {
+                         // Check if the message is currently visible (has the 'show' class)
+                        if (statusMessageDiv.classList.contains('show') && !statusMessageDiv.contains(event.target) && event.target !== closeButton) {
+                             statusMessageDiv.classList.remove('show');
+                             // After the fade out transition finishes, hide the element completely
+                            statusMessageDiv.addEventListener('transitionend', function() {
+                                statusMessageDiv.style.display = 'none';
+                                // Optional: Remove status classes after hiding
+                                statusMessageDiv.classList.remove('success', 'error');
+                                history.replaceState(null, null, window.location.pathname);
+                            }, { once: true }); // Use { once: true } to remove the listener after it fires
+                        }
+                    });
+                }
+                 // Optional: Remove the status parameter if the page is loaded without submitting (e.g., refresh)
+                 // This prevents the message from reappearing on subsequent manual refreshes
+                 if (window.location.search.includes('status=')) {
+                     // Added a small delay here too for consistency
+                     setTimeout(function() {
+                        history.replaceState(null, null, window.location.pathname);
+                     }, 10);
+                 }
+            });
+        </script>
+
+        <!-- Add reCAPTCHA v3 script -->
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                grecaptcha.ready(function() {
+                    grecaptcha.execute('6Ler5k0rAAAAACtaC6HzjUoMx1mwqF1hpEXONWVm', {action: 'contact_form'})
+                    .then(function(token) {
+                        document.getElementById('recaptchaResponse').value = token;
+                        document.getElementById('contactForm').submit();
+                    });
+                });
+            });
+        </script>
+
+    </body>
+</html>

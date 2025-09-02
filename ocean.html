@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uver Express</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="icon" href="images/uver_icon.png" type="image/png">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="images/uver2.png" alt="Uver Express Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()" style="color: #ffffff;"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li class="services-dropdown">
+                        <a href="#" class="services-toggle">SERVICES</a>
+                        <ul class="dropdown">
+                          <li><a href="ocean.html">Ocean Freight</a></li>
+                          <li><a href="air.html">Air Freight</a></li>
+                          <li><a href="trucking.html">Trucking</a></li>
+                          <li><a href="customs.html">Customs Brokerage</a></li>
+                        </ul>
+                    </li>                          
+                    <li><a href="http://fxportal.uverexpress.com/" target="_blank">TRACKING</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" style="color: #000000;"></i>
+        </nav> 
+        <section class="sub-header-ocean">
+            <h1>Ocean Freight</h1>
+        </section>
+
+        <!-- ocean freight content -->
+        
+        <div class="intro">
+            <p>Uver Express Ocean Freight offers a reliable, cost-effective solution for shipping goods internationally. With global reach and dependable transit schedules, it's ideal for bulk shipments or large-volume cargo. Our service ensures secure handling, transparent tracking, and competitive pricing, making it perfect for businesses looking to streamline logistics while keeping costs down. Whether you're importing or exporting, Uver Express provides trusted support every step of the way.</p>
+        </div>
+        <section class="content">
+            <div class="wrapper">
+                <img src="images/ship1.png" alt="" class="float-left">
+                <div class="text-box">
+                    <h2>Reliable and Cost-Effective Solutions</h2>
+                    <p>Uver specializes in delivering professional, on-time ocean freight services at the most economical rates. Our offerings include Full Container Load (FCL), Less than Container Load (LCL), and Buyer's Consolidation—ideal for combining shipments from multiple suppliers into one streamlined delivery for a single buyer.</p>
+                </div>
+            </div>
+            <div class="wrapper">
+                <img src="images/loading_container.jpg" alt="" class="float-right">
+                <div class="text-box">
+                    <h2>Last-Minute Load Savings Program</h2>
+                    <p>At Uver, we understand that freight needs can change quickly. That's why we offer our Last-Minute Load Savings Program, a flexible solution that lets customers take advantage of unused cargo space at the final stages of shipment planning. If there's leftover room on a container, we give businesses the opportunity to add their freight at reduced rates—saving them hundreds of dollars while optimizing shipping efficiency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        How do I track my shipment?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>You can track your shipment using our tracking tool on this website: 
+                            <a href="http://fxportal.uverexpress.com/" target="_blank">fxportal.uverexpress.com</a>
+                        </p>
+                    </div>
+                </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Is it cheaper to ship LCL or FCL?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>The price you will pay for either LCL or FCL shipping depends entirely on your cargo. If you want to ship small boxes or palletized cargo, then it is likely cheaper for you to choose LCL shipping. However, if your goods take up most of a container's space, then it is more cost-effective for you to choose FCL.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What is the maximum CBM for LCL?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>The maximum for a single package is 3000 kg and 29 CBM and the maximum limit per booking is 20,000 kg and 60 CBM.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        Can I add customs to my LCL shipment?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Yes, you can book both Export and Import customs clearances with your LCL bookings.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        What if my LCL cargo exceeds the maximum limit?
+                        <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-body">
+                        <p>If you exceed the limit for a single package of 3,000 kg and 29 CBM, or the total of 20,000 kg and 60 CBM, please contact us.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+
+        <section class="footer">
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ocean.html">Ocean Freight</a></li>
+                        <li><a href="air.html">Air Freight</a></li>
+                        <li><a href="trucking.html">Trucking</a></li>
+                        <li><a href="customs.html">Customs Brokerage</a></li>
+                        <li><a href="http://fxportal.uverexpress.com/" target="_blank">Tracking</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>10520 Yonge Street Unit 35B, Suite #330<br>Richmond Hill, Ontario, Canada, L4C 3C7</p>
+                    <p>Phone: +1 (416) 399-6878</p>
+                    <p>Email: info@uverexpress.com</p>
+                    <p>Mon - Fri: 8:30AM – 5PM</p>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; 2025 UVER Express Inc. All Rights Reserved.</p>
+                <p>Information in this website is subject to change without notice.</p>
+            </div>
+        </section>  
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+        <!-- JavaScript for Toggle Menu -->
+        <script>
+
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+        <script>
+            // Accordion toggle functionality with arrow rotation
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const accordionBody = this.nextElementSibling;
+                    const arrowIcon = this.querySelector('i');
+                    
+                    // Toggle the active class and display
+                    if (accordionBody.style.display === 'block') {
+                        accordionBody.style.display = 'none';
+                        this.classList.remove('open');
+                    } else {
+                        accordionBody.style.display = 'block';
+                        this.classList.add('open');
+                    }
+                });
+            });
+        </script>
+
+        <!-- JavaScript for Shrinking Navbar -->
+        <script>
+        // Select the navbar
+        const navbar = document.querySelector('.navbar');
+
+        // Listen for scroll events
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shrink');
+            } else {
+                navbar.classList.remove('shrink');
+            }
+        });
+        </script>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const servicesItem = document.querySelector(".services-dropdown");
+                const toggle = document.querySelector(".services-toggle");
+                const dropdown = servicesItem.querySelector(".dropdown");
+                let isMobile = window.innerWidth <= 1300;
+            
+                function setupMobileMenu() {
+                    if (isMobile) {
+                        toggle.addEventListener("click", function (e) {
+                            e.preventDefault();
+                            dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+                        });
+            
+                        // Close if clicking outside
+                        document.addEventListener("click", function (e) {
+                            if (!servicesItem.contains(e.target)) {
+                                dropdown.style.display = "none";
+                            }
+                        });
+                    } else {
+                        // Desktop behavior
+                        servicesItem.addEventListener("mouseenter", function() {
+                            dropdown.style.display = "block";
+                        });
+            
+                        servicesItem.addEventListener("mouseleave", function() {
+                            dropdown.style.display = "none";
+                        });
+                    }
+                }
+            
+                setupMobileMenu();
+            
+                // Handle window resize without page reload
+                window.addEventListener("resize", function () {
+                    const wasMobile = isMobile;
+                    isMobile = window.innerWidth <= 1300;
+                    
+                    if (wasMobile !== isMobile) {
+                        dropdown.style.display = "none";
+                        setupMobileMenu();
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>
