@@ -18,8 +18,7 @@ With deep industry expertise and a global network of partners, Uver Express ensu
 ## 🛠️ Tech Stack
 This project is built using:
 - **HTML5 / CSS3**  
-- **JavaScript**  
-- (Optional: Add frameworks/libraries you’re using — e.g., Bootstrap, Tailwind, React, Node.js, etc.)  
+- **JavaScript**
 
 ---
 
