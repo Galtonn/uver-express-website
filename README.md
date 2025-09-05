@@ -19,6 +19,7 @@ With deep industry expertise and a global network of partners, Uver Express ensu
 This project is built using:
 - **HTML5 / CSS3**  
 - **JavaScript**
+- **PHP and PHPMailer**
 
 ---
 
