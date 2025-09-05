@@ -25,7 +25,7 @@ This project is built using:
 
 ## 🌐 Live Demo
 Check out the live site here:  
-👉 [Uver Express Website](http://uverexpress-001-site5.mtempurl.com/index.html)  
+👉 [Uver Express Website](http://www.uverexpress.com/)  
 
 ---
 
